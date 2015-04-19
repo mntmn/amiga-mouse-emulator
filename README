@@ -1,0 +1,10 @@
+Have an Amiga, but no compatible mouse? Emulate it using an Arduino or other microcontroller and another computer, for example a Raspberry Pi or your Laptop. This also allows remote control of an Amiga via the mouse.
+
+It works like this:
+
+- Arduino drives Xa/Xb, Ya/Yb and Left/Right mouse button signals. Connect it directly to the DB9 mouse/joystick port.
+- Arduino receives control characters from host/remote computer that correspond to left/right/down/up/lmb/rmb mouse movements.
+- The included example control application (written in Python) opens a window that will accept your mouse movements and convert them into corresponding mouse movements on the Amiga. 
+
+Written by Lukas F. Hartmann (mntmn) on Apr 19, 2015.
+License: GPLv2 or later
